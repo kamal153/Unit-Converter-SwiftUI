@@ -113,6 +113,7 @@ struct Length: View {
                     TextField("Enter length", text: $length)
                         .padding()
                         .font(.system(size: 25))
+                        .keyboardType(.decimalPad)
                     Picker("Input Unit", selection: $inputUnit) {
                         ForEach(0..<lengthUnits.count) { i in
                             Text("\(lengthUnits[i])")

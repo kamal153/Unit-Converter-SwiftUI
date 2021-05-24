@@ -70,6 +70,7 @@ struct Temperature: View {
                     TextField("Enter temperature", text: $temperature)
                         .padding()
                         .font(.system(size: 25))
+                        .keyboardType(.decimalPad)
                     Picker("Input Unit", selection: $inputUnit) {
                         ForEach(0..<tempUnits.count) { i in
                             Text("\(tempUnits[i])")

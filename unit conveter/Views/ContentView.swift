@@ -17,7 +17,9 @@ struct ContentView: View {
                 NavigationLink( destination: Length() ) {
                     Text("Length")
                 }
-                Text("Time")
+                NavigationLink( destination: Time() ) {
+                    Text("Time")
+                }
                 Text("Volume")
             }
             .navigationTitle("Unit conveter")
